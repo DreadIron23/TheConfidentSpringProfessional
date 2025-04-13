@@ -15,7 +15,7 @@ import sk.janmokry.ApplicationLauncher;
 @PropertySource(value = "classpath:/application-${spring.profiles.active}.properties"
         , ignoreResourceNotFound = true)
 @EnableWebMvc
-public class MyFancyPdfInvoicesApplicationConfiguration {
+public class ApplicationConfiguration {
 
     @Bean //
     public MethodValidationPostProcessor methodValidationPostProcessor() {
