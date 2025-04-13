@@ -1,11 +1,13 @@
 package sk.janmokry.service;
 
+import org.springframework.stereotype.Component;
 import sk.janmokry.model.Invoice;
 import sk.janmokry.model.User;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+@Component
 public class InvoiceService {
 
     private final UserService userService;
