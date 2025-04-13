@@ -10,9 +10,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
 @Component
 public class InvoiceService {
 
-    private final UserService userService;
-
     private List<Invoice> invoices = new CopyOnWriteArrayList<>();
+
+    private final UserService userService;
 
     public InvoiceService(UserService userService) {
         this.userService = userService;
