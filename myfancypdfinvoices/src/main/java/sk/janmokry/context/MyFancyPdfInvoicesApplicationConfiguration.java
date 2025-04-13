@@ -1,8 +1,10 @@
 package sk.janmokry.context;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import sk.janmokry.service.InvoiceService;
 import sk.janmokry.service.UserService;
 
@@ -10,6 +12,7 @@ import sk.janmokry.service.UserService;
 public class MyFancyPdfInvoicesApplicationConfiguration {
 
     @Bean
+    @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public UserService userService() {
         return new UserService();
     }
