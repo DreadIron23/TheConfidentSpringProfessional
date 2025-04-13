@@ -37,3 +37,19 @@ You learned about writing @RestControllers, that can accept and return a variety
 You also learned all about various ways of accepting request params, path variables or request bodies.
 
 Finally, you learned how to validate incoming beans or even just parameters, as well as changing exceptions in RestControllerAdvices.
+
+## 04 - Spring WebMVC: HTML Pages
+
+### Outro
+
+Here’s a quick recap of what you learned in this module.
+
+At the very beginning, you learned how to setup Thymeleaf and Spring, including its Maven dependencies and Spring beans.
+
+You learned how to render a static HTML Thymeleaf template, as well as more advanced Thymeleaf templates with its special templating syntax.
+
+Finally, you went on to submit forms with Thymeleaf, including automatic field-binding and validation.
+
+That being said: Writing HTML with Spring MVC is a huge topic and not everything can be covered throughout this course.
+
+If you want to get the information on all MVC concepts (including how to customize and internationalize your error messages), have a look at the [official documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc).
