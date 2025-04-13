@@ -1,4 +1,4 @@
-## Outro
+## 01 - Java Webapps without Spring - Outro
 
 There’s a fair amount of things you learned in this module. Let’s have a quick recap.
 
