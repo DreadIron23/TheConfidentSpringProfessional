@@ -1,3 +1,5 @@
+# [The Confident Spring Professional - Course](https://www.marcobehler.com/courses/spring-professional)
+
 ## 01 - Java Webapps without Spring
 
 ### Outro
@@ -44,7 +46,7 @@ Finally, you learned how to validate incoming beans or even just parameters, as 
 
 Here’s a quick recap of what you learned in this module.
 
-At the very beginning, you learned how to setup Thymeleaf and Spring, including its Maven dependencies and Spring beans.
+At the very beginning, you learned how to set up Thymeleaf and Spring, including its Maven dependencies and Spring beans.
 
 You learned how to render a static HTML Thymeleaf template, as well as more advanced Thymeleaf templates with its special templating syntax.
 
@@ -53,3 +55,13 @@ Finally, you went on to submit forms with Thymeleaf, including automatic field-b
 That being said: Writing HTML with Spring MVC is a huge topic and not everything can be covered throughout this course.
 
 If you want to get the information on all MVC concepts (including how to customize and internationalize your error messages), have a look at the [official documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc).
+
+## 05 - Spring Database Access
+
+### Outro
+
+First, you learned how to add an embedded H2 Database to your project and how to create a DataSource for it.
+
+You then set up a JdbcTemplate to refactor your InvoiceService to execute SQL statements against a real database, instead of saving invoices into an in-memory list.
+
+Finally, you had a quick look at how to set up Spring’s @Transactional annotation.
