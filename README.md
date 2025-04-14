@@ -96,5 +96,16 @@ You then proceeded to write your very own AutoConfiguration.
 
 You should now have a pretty good grasp of Spring Boot!
 
- 
+## 08 - Spring Data JDBC
 
+### Outro
+
+The main takeaway from this section should be that Spring Data JDBC gives you convenient access to repositories with the help of a couple of mapping annotations.
+
+As for all other Spring Data projects:
+
+Even though they all run under the Spring Data banner, `spring-data-jdbc`, `spring-data-jpa`, `spring-data-ldap` and others are all different from each other, because the underlying data storage technologies are different. They also support different features, like you saw earlier with the `queries-by-method-names` support.
+
+In the end, however, they all try to allow you easy data access by providing repositories on top of the underlying technology. Be that the JdbcTemplate, Hibernate or Active Directories.
+
+This means, you’ll need to learn the underlying technology before blindly jumping right into the corresponding Spring Data project.
