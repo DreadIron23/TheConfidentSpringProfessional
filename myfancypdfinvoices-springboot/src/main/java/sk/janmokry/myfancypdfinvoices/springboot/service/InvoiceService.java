@@ -38,6 +38,11 @@ public class InvoiceService {
     }
 
     @Transactional
+    public Iterable<Invoice> findByUserId(String userId) {
+        return invoiceRepository.findByUserId(userId);
+    }
+
+    @Transactional
     public Invoice create(String userId, Integer amount) {
         String generatedPdfUrl = cdnUrl + "/images/default/sample.pdf";
 

@@ -1,10 +1,7 @@
 package sk.janmokry.myfancypdfinvoices.springboot.web;
 
 import jakarta.validation.Valid;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import sk.janmokry.myfancypdfinvoices.springboot.dto.InvoiceDto;
 import sk.janmokry.myfancypdfinvoices.springboot.model.Invoice;
 import sk.janmokry.myfancypdfinvoices.springboot.service.InvoiceService;
@@ -22,6 +19,11 @@ public class InvoicesController {
     // @RequestMapping(value = "/invoices", method = RequestMethod.GET)
     public Iterable<Invoice> invoices() {
         return invoiceService.findAll();
+    }
+
+    @GetMapping("/invoices/user/{userId}")
+    public Iterable<Invoice> getInvoicesByUserId(@PathVariable String userId) {
+        return invoiceService.findByUserId(userId);
     }
 
     @PostMapping("/invoices")
