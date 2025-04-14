@@ -1,6 +1,7 @@
 package sk.janmokry.context;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.h2.jdbcx.JdbcDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +12,8 @@ import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import sk.janmokry.ApplicationLauncher;
+
+import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackageClasses = ApplicationLauncher.class)
@@ -25,6 +28,14 @@ public class ApplicationConfiguration {
         return new MethodValidationPostProcessor();
     }
 
+    @Bean
+    public DataSource dataSource() {
+        JdbcDataSource ds = new JdbcDataSource();
+        ds.setURL("jdbc:h2:~/myFirstH2Database;INIT=RUNSCRIPT FROM 'classpath:schema.sql'");
+        ds.setUser("sa");
+        ds.setPassword("sa");
+        return ds;
+    }
 
     @Bean
     public ObjectMapper objectMapper() {
