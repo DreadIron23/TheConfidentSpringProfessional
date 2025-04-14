@@ -9,8 +9,6 @@ import sk.janmokry.myfancypdfinvoices.springboot.dto.InvoiceDto;
 import sk.janmokry.myfancypdfinvoices.springboot.model.Invoice;
 import sk.janmokry.myfancypdfinvoices.springboot.service.InvoiceService;
 
-import java.util.List;
-
 @RestController
 public class InvoicesController {
 
@@ -22,7 +20,7 @@ public class InvoicesController {
 
     @GetMapping("/invoices")
     // @RequestMapping(value = "/invoices", method = RequestMethod.GET)
-    public List<Invoice> invoices() {
+    public Iterable<Invoice> invoices() {
         return invoiceService.findAll();
     }
 
