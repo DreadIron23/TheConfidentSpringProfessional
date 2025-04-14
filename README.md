@@ -65,3 +65,21 @@ First, you learned how to add an embedded H2 Database to your project and how to
 You then set up a JdbcTemplate to refactor your InvoiceService to execute SQL statements against a real database, instead of saving invoices into an in-memory list.
 
 Finally, you had a quick look at how to set up Spring’s @Transactional annotation.
+
+## 06 - Spring Boot Basics
+
+### Outro
+
+If you made it this far, you should understand by now that Spring Boot only takes plain Spring framework features, and configures them for you, behind the scenes:
+
+* It boots up an embedded Tomcat when you run the `SpringBootApplication` main method.
+
+* It automatically generates beans from `application.properties`.
+
+* It makes dependency management much nicer: You don’t need to worry about versions anymore and can import "starter"-libraries like `spring-boot-starter-jdbc`, that will automatically pull in all other needed dependencies.
+
+The issue: Without reading the documentation and by just copying code online, you will think that Spring Boot is a bunch of magic.
+
+But remember: Spring Boot is hiding exactly what you did in the previous module (starting Tomcat, registering DispatcherServlet, creating DataSources etc.), it still has to happen behind the scenes. There’s no way around it!
+
+Let’s find out how Spring Boot does all this, internally, in the next module.
