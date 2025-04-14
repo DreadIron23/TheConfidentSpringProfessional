@@ -83,3 +83,18 @@ The issue: Without reading the documentation and by just copying code online, yo
 But remember: Spring Boot is hiding exactly what you did in the previous module (starting Tomcat, registering DispatcherServlet, creating DataSources etc.), it still has to happen behind the scenes. There’s no way around it!
 
 Let’s find out how Spring Boot does all this, internally, in the next module.
+
+## 07 - Spring Boot: Internals
+
+### Outro
+
+This was the deep dive into Spring Boot.
+
+At the beginning you learned about Spring’s AutoConfigurations, how they work thanks to @Conditionals and how they are structured in Spring Boot’s source code.
+
+You then proceeded to write your very own AutoConfiguration.
+
+You should now have a pretty good grasp of Spring Boot!
+
+ 
+
