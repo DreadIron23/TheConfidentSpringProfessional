@@ -1,5 +1,11 @@
 # [The Confident Spring Professional - Course](https://www.marcobehler.com/courses/spring-professional)
 
+I have completed [The Confident Spring Professional course](https://www.marcobehler.com/courses/spring-professional) offered by Marco Behler, which provides an in-depth understanding of the Spring Framework and its ecosystem.
+
+Throughout the course, I worked on practical exercises and projects to solidify my understanding of these concepts. This repository contains the code and projects developed during the course.
+
+The following points in this file describe individual modules.
+
 ## 01 - Java Webapps without Spring
 
 ### Outro
